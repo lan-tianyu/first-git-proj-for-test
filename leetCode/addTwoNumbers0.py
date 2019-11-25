@@ -4,6 +4,7 @@ class ListNode:
         self.val = x
         self.next = None
 
+
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         '''
@@ -35,6 +36,7 @@ class Solution:
             cur = cur.next
         return result if result.val == 1 else result.next
 
+
 class TestSolution:
     def initListNode(self, num) -> ListNode :
         list_node = ListNode(0)
@@ -54,7 +56,7 @@ class TestSolution:
             list_num.append(str(p.val))
             p = p.next
         print('->'.join(list_num))
-            
+
     def test_addTwoNumbers(self):
         s = Solution()
         l1 = self.initListNode(243)
