@@ -1,0 +1,9 @@
+*.log
+*.pytest*
+*.vscode
+
+__init__*
+
+
+# dir
+/test_*
