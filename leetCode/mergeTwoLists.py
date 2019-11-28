@@ -7,10 +7,6 @@ class ListNode:
 
 class Solution:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
-        # if not l2:
-        #     return l1
-        # if not l1:
-        #     return l2
         p, q = l1, l2
         head = ListNode(0)
         cur = head
