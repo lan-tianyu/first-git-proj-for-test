@@ -1,4 +1,6 @@
 import re
+
+
 class Solution:
     def myAtoi(self, str: str) -> int:
         pattern = r'^[\+\-]?\d+'
@@ -10,6 +12,7 @@ class Solution:
             return max(int_n, -2**31) if int_n < 0 else min(int_n, 2**31-1)
         return 
     
+
 if __name__ == '__main__':
     s = Solution()
     print(s.myAtoi('    -'))

@@ -1,2 +1,13 @@
 *.log
+<<<<<<< HEAD
 *.vscode
+=======
+*.pytest*
+*.vscode
+
+__init__*
+
+
+# dir
+/test_*
+>>>>>>> 4a4d9b2d28f4a24bcd09223105d80c222ed47ac6
