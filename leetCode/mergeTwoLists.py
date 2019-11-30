@@ -54,8 +54,8 @@ class TestSolution:
         self.printListNode(ll)
         ll = solution.mergeTwoLists(l1, None)
         self.printListNode(ll)
-            
-                
+
+
 if __name__ == '__main__':
     test = TestSolution()
     test.test_mergeTwoLists()

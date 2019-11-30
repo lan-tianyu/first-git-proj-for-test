@@ -13,7 +13,7 @@ class Solution:
             else:
                 map_d[e] = i
                 last = i
-            count = max(count, last-first)
+            count = max(count, last - first)
         return count
 
 
@@ -30,9 +30,8 @@ class TestSolution():
         print(s.lengthOfLongestSubstring(ss1))
         ss1 = 'abba'
         print(s.lengthOfLongestSubstring(ss1))
-        
+
 
 if __name__ == '__main__':
     test = TestSolution()
     test.test_lengthOfLongestSubstring()
-

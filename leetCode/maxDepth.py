@@ -9,10 +9,10 @@ class TreeNode:
 class Solution:
     # def maxDepth(self, root: TreeNode) -> int:
     #     """[递归方式]
-        
+
     #     Arguments:
     #         root {TreeNode} -- [description]
-        
+
     #     Returns:
     #         int -- [description]
     #     """
@@ -26,10 +26,10 @@ class Solution:
     #     遍历完的节点都放到stack里边了
     #     左节点遍历完，到右节点，不用加深度，进入下一个循环节点有判断depth+1
     #     注意每次depth变化，都要判断max_depth
-        
+
     #     Arguments:
     #         root {TreeNode} -- [description]
-        
+
     #     Returns:
     #         int -- [description]
     #     """
@@ -99,8 +99,8 @@ class TestSoluntion:
         n7 = TreeNode(19)
         n5.left = n6
         n6.right = n7
-        print(Solution().maxDepth(root)) # 5
-        print('---'*20)
+        print(Solution().maxDepth(root))  # 5
+        print('---' * 20)
 
         root1 = TreeNode(0)
         n2 = TreeNode(2)
@@ -124,7 +124,7 @@ class TestSoluntion:
         n4.right = n10
         n11 = TreeNode(1)
         n10.right = n11
-        print(Solution().maxDepth(root1)) # 5
+        print(Solution().maxDepth(root1))  # 5
 
 
 if __name__ == '__main__':

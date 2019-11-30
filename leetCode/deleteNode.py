@@ -15,11 +15,11 @@ class Solution:
         node.val = node.next.val
         node.next = node.next.next
         print(node, node.val)
-        
+
 
 class TestSoluntion:
     # def initListNode(self, node_list) -> ListNode:
-    #     head = ListNode(0) 
+    #     head = ListNode(0)
     #     p = head
     #     for e in node_list:
     #         p.next = ListNode(e)
@@ -50,7 +50,7 @@ class TestSoluntion:
         s = Solution()
         s.deleteNode(n3)
         self.printListNode(head)
-        
+
 
 if __name__ == '__main__':
     test = TestSoluntion()

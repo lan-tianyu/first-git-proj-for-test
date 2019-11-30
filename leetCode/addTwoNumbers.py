@@ -16,7 +16,7 @@ class Solution:
             return None
         p1 = l1
         p2 = l2
-        carry = 0 
+        carry = 0
         result = ListNode(0)
         cur = result
         while p1 or p2:
@@ -53,7 +53,7 @@ class TestSolution:
             list_num.append(str(p.val))
             p = p.next
         print('->'.join(list_num))
-                  
+
     def test_addTwoNumbers(self):
         s = Solution()
         l1 = self.initListNode(243)
@@ -66,11 +66,11 @@ class TestSolution:
         self.printListNode(result)
         l1 = self.initListNode(99)
         l2 = self.initListNode(1)
-        result = s.addTwoNumbers(l1, l2) 
+        result = s.addTwoNumbers(l1, l2)
         self.printListNode(result)
         l1 = None
         l2 = self.initListNode(1)
-        result = s.addTwoNumbers(l1, l2) 
+        result = s.addTwoNumbers(l1, l2)
         self.printListNode(result)
 
 

@@ -41,7 +41,7 @@ class Solution:
     #     if result != 0:
     #         return result
     #     return None
-        
+
     def singleNumber(self, nums: List[int]) -> int:
         """[位操作运算]
         数学公式

@@ -35,18 +35,18 @@ class Solution:
 class TestSolution:
     def test_majorityElement(self):
         solution = Solution()
-        nums = [2,2,1,1,1,2,2]
+        nums = [2, 2, 1, 1, 1, 2, 2]
         assert solution.majorityElement(nums) == 2
-        nums = [2,1,1]
+        nums = [2, 1, 1]
         assert solution.majorityElement(nums) == 1
-        nums = [2,1,3,3,3]
+        nums = [2, 1, 3, 3, 3]
         assert solution.majorityElement(nums) == 3
         nums = []
         assert solution.majorityElement(nums) is None
         nums = [1]
         assert solution.majorityElement(nums) == 1
-        
-        
+
+
 if __name__ == '__main__':
     test = TestSolution()
     test.test_majorityElement()

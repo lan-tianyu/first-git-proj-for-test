@@ -11,9 +11,9 @@ class Solution:
         prev = None
         while cur:
             next = cur.next
-            cur.next = prev    # 断链
-            prev = cur    # 指向已经倒序的头
-            cur = next    # 往后遍历
+            cur.next = prev  # 断链
+            prev = cur  # 指向已经倒序的头
+            cur = next  # 往后遍历
         return prev
 
 
@@ -35,7 +35,7 @@ class TestSolution:
             list_num.append(str(p.val))
             p = p.next
         print('->'.join(list_num))
-                  
+
     def test_reverseList(self):
         s = Solution()
         l1 = self.initListNode(1234557890)

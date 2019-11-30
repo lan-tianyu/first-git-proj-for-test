@@ -9,9 +9,9 @@ class Solution:
         if m:
             #  int_n = int(m.group(0))
             int_n = int(m[0])
-            return max(int_n, -2**31) if int_n < 0 else min(int_n, 2**31-1)
-        return 
-    
+            return max(int_n, -2**31) if int_n < 0 else min(int_n, 2**31 - 1)
+        return
+
 
 if __name__ == '__main__':
     s = Solution()
