@@ -38,7 +38,6 @@ class TestSoluntion:
     #     len_node_list = len(node_list)
     #     for i in range(1, len_node_list-1):
             
-
     def printListNode(self, head: ListNode):
         p = head
         list_val = []
