@@ -11,12 +11,13 @@ class Solution:
     #     return sum_all - sum_nums
 
     def missingNumber(self, nums: List[int]) -> int:
-        """[数学法]
+        """[异或法]
         """
         n = len(nums)
-        sum_all = int(n / 2 * (n + 1))
-        sum_nums = sum(e for e in nums)
-        return sum_all - sum_nums
+        for i, e in enumerate(nums):
+            n = n ^ i ^ e
+            print(n)
+        return n ^ n
 
     # def missingNumber(self, nums: List[int]) -> int:
     #     """[哈希表法]
