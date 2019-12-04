@@ -6,13 +6,29 @@ class ListNode:
 
 
 class Solution:
+    # def hasCycle(self, head: ListNode) -> bool:
+    #     """[哈希表法]
+    #     时间复杂度：O(n)， 链表的长度
+    #     空间复杂度：O(n)， 额外的空间存放链表的节点
+    #     """
+    #     map_node = {}
+    #     p = head
+    #     while p:
+    #         if map_node.get(p):
+    #             return True
+    #         map_node[p] = 1
+    #         p = p.next
+    #     return False
+
     def hasCycle(self, head: ListNode) -> bool:
         """[快慢指针]
         快指针走两步，慢指针走一步，直到快指针与慢指针相等，则说明是环
         如果快指针为空，则不是环
+        时间复杂度：非环形部分是o(N)，环形部分是两者距离之差/速度之差，O(K)，总的来说是O(n)
+        空间复杂度：O(1)
         """
-        fast = head
         slow = head
+        fast = head
         while fast and fast.next:
             fast = fast.next.next
             slow = slow.next
