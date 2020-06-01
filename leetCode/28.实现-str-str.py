@@ -32,7 +32,7 @@ class Solution:
     #     2. start边界值，最大值满足strt+m==len(haystack)，说明start<len(haystack)-m+1
     #     3. 异常场景：两个一样长
     #     4. 异常场景：haystack长度小于needle
-    #     时间：O(n-m),O(N)
+    #     时间：O((N-L)L)
     #     空间：O(1)
     #     """
     #     m = len(needle)
@@ -52,6 +52,8 @@ class Solution:
         由步骤2可推导出，j-i位置一定与i==0值相等时才会都自增1，haystack的j-i个元素已经和needle的i=0元素比较过了，所以needle指针i重置为0时，先haystack指针j重置为j-i+1，后指针i重置为0，
         5. 边界值：两个字符串长度一致；needle 长度大于haystack长度；needle为空；两个字符串为空
         6. 循环跳出条件之一：当i指针及以后元素个数大于j指针及以后元素个数
+
+        时间：最优是O(N)，最差是O((N-L)L)，每次差最后一个元素不匹配，则又得重来
         """
         m = len(needle)
         n = len(haystack)
