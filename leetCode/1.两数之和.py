@@ -1,3 +1,10 @@
+#
+# @lc app=leetcode.cn id=1 lang=python3
+#
+# [1] 两数之和
+#
+
+# @lc code=start
 from typing import List
 
 
@@ -38,3 +45,6 @@ assert s.twoSum([11, 2, 7, 15], 26) == (0, 3)
 assert s.twoSum([11, 2, 7, 15], 25) is None
 assert s.twoSum([11, 2, 7, 15], 17) == (1, 3)
 assert s.twoSum([11, 2, 7, 15], 15) is None
+        
+# @lc code=end
+
