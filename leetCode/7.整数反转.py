@@ -51,10 +51,10 @@ class Solution:
                     return 0
             else:
                 t = x % -10
-                x = -(x//-10)
+                x = -(x // -10)
                 print(s, x, t)
                 if s < -(MIN_INT // -10) or (s == -(MIN_INT // -10)
-                                         and t < MIN_INT % -10):
+                                             and t < MIN_INT % -10):
                     return 0
             s = s * 10 + t
         return s
