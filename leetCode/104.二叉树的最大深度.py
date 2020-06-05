@@ -60,17 +60,18 @@ class Solution:
         """
         if not root:
             return 0
-        self.depth = 0
-        self.dfs(root, 1)
-        return self.depth
-
-    def dfs(self, node, level):
-        if not node:
-            return None
-        self.depth = max(level, self.depth)
-        print(self.depth, level)
-        self.dfs(node.left, level + 1)
-        self.dfs(node.right, level + 1)
+        depth = 0
+        
+        def _dfs(node, level):
+            if not node:
+                return None
+            nonlocal depth
+            depth = max(depth, level)
+            _dfs(node.left, level + 1) 
+            _dfs(node.right, level + 1) 
+        
+        _dfs(root, 1)
+        return depth
 
 
 s = Solution()
