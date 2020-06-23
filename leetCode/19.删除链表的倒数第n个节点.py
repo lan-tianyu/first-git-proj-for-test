@@ -18,27 +18,27 @@ class Solution:
         p = head
         while p:
             q = p.next
-            i = n-1
+            i = n
             while i > 0 and q:
                 q = q.next
                 i -= 1
                 print('q----')
                 printListNode(q)
+            if q is None and i > 0:
+                return p.next
             if q is None and i == 0:
                 print('None')
                 break
             p = p.next
             print('p----')
             printListNode(p)
-        printListNode(p)
-        if p:
-            p.next = p.next.next
-        else:
-            return None
+        # printListNode(p)
+        p.next = p.next.next
         return head
 
 
 def printListNode(node):
+    print('hello-------------')
     h = node
     node_list = []
     while h:
@@ -60,8 +60,12 @@ n3.next = n4
 n4.next = n5
 n5.next = n6
 n6.next = n7
-printListNode(head)
 s = Solution()
 # printListNode(s.removeNthFromEnd(head, 2))
+# printListNode(s.removeNthFromEnd(head, 1))
+# printListNode(s.removeNthFromEnd(head, 7))
 printListNode(s.removeNthFromEnd(n7, 1))
+# printListNode(s.removeNthFromEnd(n6, 2))
+
+
 # @lc code=end
